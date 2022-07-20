@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <color name="intro_yellow">#FFE81E</color>
+    <color name="intro_indigo">#9900CF</color>
+    <color name="intro_blue">#073F9E</color>
+    <color name="intro_red">#FF5A58</color>
+</resources>

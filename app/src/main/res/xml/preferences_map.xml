@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/status_panel_mode"
+        android:entryValues="@array/status_panel_mode_val"
+        android:key="show_status_panel"
+        android:title="@string/show_status_panel"/>
+
+    <ListPreference
+        android:defaultValue="3"
+        android:entries="@array/current_location_mode"
+        android:entryValues="@array/current_location_mode_val"
+        android:key="show_current_location"
+        android:title="@string/show_current_location"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="map_show_compass"
+        android:title="@string/show_compass"/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="keep_screen_on"
+        android:summary="@string/keep_screen_on_summary"
+        android:title="@string/keep_screen_on"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_zoom_controls"
+        android:summary="@string/show_zoom_controls_summary"
+        android:title="@string/show_zoom_controls"/>
+
+    <ListPreference
+        android:defaultValue="metric"
+        android:dialogTitle="@string/preferred_units"
+        android:entries="@array/units"
+        android:entryValues="@array/units_val"
+        android:key="preferred_units"
+        android:title="@string/preferred_units"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_scale_ruler"
+        android:title="@string/show_scale_ruler"/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_zoom_level"
+        android:title="@string/show_zoom_level"/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_ruler_measuring"
+        android:title="@string/show_ruler_measuring"/>
+
+    <ListPreference
+        android:defaultValue="0"
+        android:dialogTitle="@string/select_coordinates_format"
+        android:entries="@array/coordinates_format"
+        android:entryValues="@array/coordinates_format_val"
+        android:key="coordinates_format"
+        android:summary="@string/coordinates_format_summary"
+        android:title="@string/coordinates_format"/>
+
+    <com.dmsxa.mobile.util.IntEditTextPreference
+        android:defaultValue="6"
+        android:inputType="number"
+        android:key="coordinates_fraction_digits"
+        android:numeric="integer"
+        android:title="@string/coordinates_fraction_digits"/>
+
+    <ListPreference
+        android:defaultValue="neutral"
+        android:entries="@array/map_bg_entry"
+        android:entryValues="@array/map_bg_val"
+        android:key="map_bg"
+        android:title="@string/map_bg"/>
+    <!--bui/blob/master/src/main/res/values/arrays.xml#L107-->
+
+    <com.dmsxa.mobile.util.SelectMapPathPreference
+        android:key="map_path"
+        android:title="@string/map_path"
+        android:summary="@string/map_path_summary"/>
+
+    <Preference
+        android:key="restore_layers"
+        android:title="@string/restore_layers"/>
+    <!-- TODO:
+    1) tile size
+    2) drawing canvas size in percent   -->
+
+</PreferenceScreen>

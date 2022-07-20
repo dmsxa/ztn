@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/status_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/colorPrimary"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <com.dmsxa.mobile.util.AutoFitTextView
+            android:id="@+id/tv_latitude"
+            style="@style/status_panel_text"
+            android:gravity="center"/>
+
+        <com.dmsxa.mobile.util.AutoFitTextView
+            android:id="@+id/tv_longitude"
+            style="@style/status_panel_text"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <com.dmsxa.mobile.util.AutoFitTextView
+            android:id="@+id/tv_source"
+            style="@style/status_panel_text"/>
+
+        <com.dmsxa.mobile.util.AutoFitTextView
+            android:id="@+id/tv_accuracy"
+            style="@style/status_panel_text"
+            android:drawableLeft="@drawable/ic_accuracy"
+            android:drawableStart="@drawable/ic_accuracy"/>
+
+        <com.dmsxa.mobile.util.AutoFitTextView
+            android:id="@+id/tv_altitude"
+            style="@style/status_panel_text"
+            android:drawableLeft="@drawable/ic_altitude"
+            android:drawableStart="@drawable/ic_altitude"/>
+
+        <com.dmsxa.mobile.util.AutoFitTextView
+            android:id="@+id/tv_speed"
+            style="@style/status_panel_text"
+            android:drawableLeft="@drawable/ic_speed"
+            android:drawableStart="@drawable/ic_speed"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/color_grey_400"/>
+
+</LinearLayout>

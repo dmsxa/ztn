@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <PreferenceScreen
+            android:title="@string/general"
+            android:key="com.dmsxa.mobile.PREFS_GENERAL"
+            >
+        <!-- We need the stub preference -->
+        <Preference/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/map"
+            android:key="com.dmsxa.mobile.PREFS_MAP"
+            >
+        <!-- We need the stub preference -->
+        <Preference/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/location"
+            android:key="com.dmsxa.mobile.PREFS_LOCATION"
+            >
+        <!-- We need the stub preference -->
+        <Preference/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/tracks"
+            android:key="com.dmsxa.mobile.PREFS_TRACKING"
+            >
+        <!-- We need the stub preference -->
+        <Preference/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/ngw_accounts"
+            android:key="com.dmsxa.mobile.PREFS_NGW"
+            >
+        <!-- We need the stub preference -->
+        <Preference/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/ngid_settings"
+            android:key="com.dmsxa.mobile.PREFS_NGID"
+            >
+        <!-- We need the stub preference -->
+        <Preference/>
+    </PreferenceScreen>
+
+</PreferenceScreen>
